@@ -48,3 +48,23 @@ No hay prórroga: suban avances parciales con commits pequeños durante la prueb
 | [`test-manager-library-3145556-page`](https://github.com/code-sena/test-manager-library-3145556-page) | Sitio público estático de presentación |
 | [`test-manager-library-3145556-infra`](https://github.com/code-sena/test-manager-library-3145556-infra) | Contenedores, red, volúmenes y motor de base de datos vacío |
 | [`test-manager-library-3145556-tool`](https://github.com/code-sena/test-manager-library-3145556-tool) | Utilidades: sembrador de datos de demostración |
+
+---
+
+## Cómo abrirlo (T-23)
+
+Es un sitio estático: `index.html`, `styles.css` y `assets/`. **No llama a la API** y no muestra datos de socios.
+
+- Abrir `index.html` directamente en el navegador, o servirlo con cualquier servidor estático:
+
+```bash
+npx serve .          # o: python -m http.server 4100
+```
+
+- Publicación: GitHub Pages (Settings → Pages → rama `main`, carpeta raíz). Dirección esperada: `https://diego-alvarado07.github.io/test-manager-library-3145556-page/`.
+
+## Evidencia
+
+- Funciona sin backend: no hay `fetch` ni scripts.
+- Revisado a **375 px** (móvil, sin desplazamiento horizontal) y a **1280 px** (escritorio). El diseño pasa de 1 a 2, 3 y 4 columnas con `min-width: 640px` y `960px`.
+- Respeta el modo claro y oscuro del sistema (`prefers-color-scheme`).
