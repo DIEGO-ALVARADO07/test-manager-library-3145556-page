@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manager Library</title>
+    <meta name="description" content="Manager Library: catálogo, socios y préstamos para una biblioteca pequeña." />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Manager Library, inicio">
+        <img src="assets/logo.svg" alt="" width="32" height="32" />
+        <span>Manager Library</span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#funciones">Funciones</a>
+        <a href="#roles">Roles</a>
+        <a href="#reglas">Reglas</a>
+        <a href="#proyecto">Proyecto</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Para bibliotecas pequeñas</p>
+          <h1>Su catálogo, sus socios y sus préstamos en un solo lugar</h1>
+          <p class="lead">
+            Manager Library lleva el control de los libros, quién los tiene y cuándo deben volver, y muestra
+            cuáles son los más prestados.
+          </p>
+          <a class="button" href="#funciones">Ver qué hace</a>
+        </div>
+        <img class="hero-art" src="assets/books.svg" alt="Una pila de libros de colores" width="420" height="320" />
+      </section>
+
+      <section id="funciones" class="section">
+        <h2>Qué puede hacer</h2>
+        <ul class="cards">
+          <li class="card">
+            <h3>Catálogo con portadas</h3>
+            <p>Libros con título, autor, ISBN y cinco categorías. Búsqueda por texto y portada opcional.</p>
+          </li>
+          <li class="card">
+            <h3>Socios</h3>
+            <p>Registro de las personas que piden libros prestados, identificadas por su documento.</p>
+          </li>
+          <li class="card">
+            <h3>Préstamos de hasta 3 libros</h3>
+            <p>Plazo de 14 días y devolución libro por libro. El sistema descuenta y devuelve los ejemplares solo.</p>
+          </li>
+          <li class="card">
+            <h3>Libros vencidos</h3>
+            <p>Lista de lo que no volvió a tiempo, ordenada por los días de retraso.</p>
+          </li>
+          <li class="card">
+            <h3>Los más prestados</h3>
+            <p>Un reporte por rango de fechas que no cambia aunque después se renombre un libro.</p>
+          </li>
+          <li class="card">
+            <h3>Acceso por rol</h3>
+            <p>Cada persona ve y hace solo lo que le corresponde: administración u operación.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="roles" class="section alt">
+        <h2>Quién la usa</h2>
+        <div class="two">
+          <article class="card">
+            <h3>Administrador</h3>
+            <p>Mantiene el catálogo y los socios, da de alta a los bibliotecarios y consulta todos los reportes.</p>
+          </article>
+          <article class="card">
+            <h3>Bibliotecario</h3>
+            <p>Registra préstamos y devoluciones, y consulta el catálogo, los socios y los libros vencidos.</p>
+          </article>
+        </div>
+        <p class="note">Los socios no entran al sistema: son un dato que el personal registra.</p>
+      </section>
+
+      <section id="reglas" class="section">
+        <h2>Reglas claras</h2>
+        <dl class="rules">
+          <div><dt>14 días</dt><dd>de plazo para cada préstamo.</dd></div>
+          <div><dt>3 libros</dt><dd>como máximo sin devolver por socio.</dd></div>
+          <div><dt>Sin vencidos</dt><dd>un socio con un libro vencido no pide más hasta devolverlo.</dd></div>
+          <div><dt>Sin borrar</dt><dd>los préstamos y las devoluciones quedan siempre en el historial.</dd></div>
+        </dl>
+      </section>
+
+      <section id="proyecto" class="section alt">
+        <h2>El proyecto</h2>
+        <p>
+          Prueba técnica de la ficha ADSO 3145556, construida a partir de una especificación (SDD) con
+          <strong>React</strong>, <strong>PHP con Laravel</strong> y <strong>PostgreSQL</strong>.
+        </p>
+        <ul class="links">
+          <li><a href="https://github.com/DIEGO-ALVARADO07/test-manager-library-3145556-docs">docs — la especificación</a></li>
+          <li><a href="https://github.com/DIEGO-ALVARADO07/test-manager-library-3145556-api">api — backend Laravel</a></li>
+          <li><a href="https://github.com/DIEGO-ALVARADO07/test-manager-library-3145556-app">app — frontend React</a></li>
+          <li><a href="https://github.com/DIEGO-ALVARADO07/test-manager-library-3145556-infra">infra — contenedores</a></li>
+          <li><a href="https://github.com/DIEGO-ALVARADO07/test-manager-library-3145556-tool">tool — datos de demostración</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Manager Library · Ficha ADSO 3145556</p>
+    </footer>
+  </body>
+</html>
